@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>EIGA Privacy Policy</title>
+  <style>
+    :root { --bg: #0b0a09; --panel: #161310; --line: #3a342d; --text: #efe4d2; --muted: #b8ab98; --accent: #ff5a47; --heading: #ffffff; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #fbf8f3; --panel: #ffffff; --line: #e3dbcf; --text: #2a2520; --muted: #6b6157; --accent: #c0271b; --heading: #14110e; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; -webkit-text-size-adjust: 100%; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 72px; }
+    h1 { color: var(--heading); font-size: 2rem; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.01em; }
+    h2 { color: var(--heading); font-size: 1.2rem; line-height: 1.3; margin: 40px 0 8px; }
+    p, li { max-width: 68ch; }
+    ul { padding-left: 1.2em; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin: 0 0 24px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 12px 0; }
+    .path { font-weight: 600; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>EIGA Privacy Policy</h1>
+  <p class="meta">Last updated: October 9, 2026</p>
+  <p>EIGA helps you pick a film for tonight. This policy explains what EIGA stores, where, why, and how to delete it. EIGA does not show ads, does not track you across apps or websites, and does not sell or share personal data for advertising.</p>
+
+  <h2>Data kept on your iPhone</h2>
+  <p>Onboarding choices, taste signals (likes, passes, ratings, watched titles, “never show again”), your library, and recommendation decisions are stored on your device. You can erase them in <span class="path">Profile › Privacy &amp; Data › Clear my film history</span>.</p>
+
+  <h2>Using EIGA without an account</h2>
+  <p>To build a movie night, the app sends your five favourite films, age range, locale, chosen streaming services, filters, and recent on-device taste signals to the EIGA server. Without an account these are used only to build that list. The resulting list of recommended film IDs is stored without any link to you so a tournament can be resumed, and is deleted automatically after 30 days.</p>
+  <p>To keep the first movie night free and fair, the EIGA server gives the app a random guest pass, which the app keeps in the iOS Keychain. The server stores only that pass’s random ID, how many movie-night lists it has started, and when it was last used. Nothing about you or your device is stored with it, and passes unused for 400 days are deleted. On iPhones that support it, the app also sends a one-time Apple DeviceCheck token so Apple can tell EIGA whether this iPhone has already had its free night. EIGA does not store that token. If you have EIGA Plus without an account, the app sends its App Store transaction so the server can confirm the subscription with Apple. It is checked, not stored.</p>
+
+  <h2>Data stored on the EIGA server when you sign in</h2>
+  <ul>
+    <li>Your sign-in provider’s stable account identifier and, if the provider shares it, your email address (Apple may give a private relay address).</li>
+    <li>Taste events you make while signed in (likes, super likes, passes, watchlist, favourites, watched, ratings, “never show again”, tournament picks) and the taste profile derived from them.</li>
+    <li>Your movie nights: the recommended film list, locale, and streaming services used, plus tournament progress and winners.</li>
+    <li>A summary of how each recommendation list was scored (no personal details beyond the link to your account).</li>
+    <li>If you subscribe to EIGA Plus: the App Store original transaction ID, transaction ID, product, environment, subscription status, and expiry date. EIGA never receives payment-card details.</li>
+    <li>If you use Sign in with Apple: an encrypted Apple refresh token, kept only so EIGA can revoke Apple’s authorization when you delete your account.</li>
+  </ul>
+  <p>The app stores its EIGA session token in the iOS Keychain.</p>
+
+  <h2>Service providers</h2>
+  <ul>
+    <li><strong>Apple</strong>: Sign in with Apple, App Store purchases, and subscription status checks.</li>
+    <li><strong>Google</strong>: Google Sign-In, if you choose it. EIGA verifies the identity token Google issues.</li>
+    <li><strong>TMDB (The Movie Database)</strong>: film metadata, artwork, trailers, and search. The EIGA server sends TMDB film IDs, search text, locale, and filters, never your account details. Posters and images load directly from TMDB’s image servers, which therefore see your IP address.</li>
+    <li><strong>JustWatch</strong>: streaming availability, provided through TMDB. Availability links open TMDB or JustWatch pages.</li>
+    <li><strong>IMDb</strong>: some ratings are shown under license; the server looks them up by film ID only.</li>
+    <li><strong>YouTube</strong>: trailers open on YouTube, under Google’s privacy policy.</li>
+  </ul>
+
+  <h2>Retention</h2>
+  <p>Account data is kept until you delete your account. Anonymous movie-night lists are deleted after 30 days, and unused guest passes after 400 days. Server logs contain request IDs and error details, not taste data, and are rotated automatically.</p>
+
+  <h2>Delete your account and data</h2>
+  <p>Open <span class="path">Profile › Account &amp; Security › Delete account</span> in EIGA. Deletion happens immediately: your account, taste events, taste profile, movie nights, tournaments, recommendation summaries, and stored subscription records are removed from the EIGA server, and a Sign in with Apple authorization is revoked. Deleting your account does not cancel an App Store subscription; manage that in iOS Settings › Apple Account › Subscriptions.</p>
+
+  <h2>Children</h2>
+  <p>EIGA is not directed at children under 13. Teen profiles only see age-appropriate certifications.</p>
+
+  <h2>Contact</h2>
+  <p>Use the support contact shown on EIGA’s App Store page.</p>
+  <footer><a href="https://eiga-api.185-48-182-164.sslip.io/support">EIGA Support</a></footer>
+</main>
+</body>
+</html>
