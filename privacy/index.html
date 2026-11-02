@@ -28,15 +28,16 @@
 <body>
 <main>
   <h1>EIGA Privacy Policy</h1>
-  <p class="meta">Last updated: October 9, 2026</p>
+  <p class="meta">Last updated: November 2, 2026</p>
   <p>EIGA helps you pick a film for tonight. This policy explains what EIGA stores, where, why, and how to delete it. EIGA does not show ads, does not track you across apps or websites, and does not sell or share personal data for advertising.</p>
 
   <h2>Data kept on your iPhone</h2>
   <p>Onboarding choices, taste signals (likes, passes, ratings, watched titles, “never show again”), your library, and recommendation decisions are stored on your device. You can erase them in <span class="path">Profile › Privacy &amp; Data › Clear my film history</span>.</p>
+  <p>Names typed for a night together, the answers each person gives, and the tickets in your ticket book are stored only on your iPhone. They are never sent to the EIGA server or to anyone else. A ticket leaves the device only if you share it yourself.</p>
 
   <h2>Using EIGA without an account</h2>
   <p>To build a movie night, the app sends your five favourite films, age range, locale, chosen streaming services, filters, and recent on-device taste signals to the EIGA server. Without an account these are used only to build that list. The resulting list of recommended film IDs is stored without any link to you so a tournament can be resumed, and is deleted automatically after 30 days.</p>
-  <p>To keep the first movie night free and fair, the EIGA server gives the app a random guest pass, which the app keeps in the iOS Keychain. The server stores only that pass’s random ID, how many movie-night lists it has started, and when it was last used. Nothing about you or your device is stored with it, and passes unused for 400 days are deleted. On iPhones that support it, the app also sends a one-time Apple DeviceCheck token so Apple can tell EIGA whether this iPhone has already had its free night. EIGA does not store that token. If you have EIGA Plus without an account, the app sends its App Store transaction so the server can confirm the subscription with Apple. It is checked, not stored.</p>
+  <p>To keep the first movie night free and fair, the EIGA server gives the app a random guest pass, which the app keeps in the iOS Keychain. The server stores only that pass’s random ID, how many movie-night lists it has started, and when it was last used. Nothing about you or your device is stored with it, and passes unused for 400 days are deleted. On iPhones that support it, the app also sends a one-time Apple DeviceCheck token so Apple can tell EIGA whether this iPhone has already had its free night. EIGA does not store that token. If you have EIGA Plus without an account, the app sends its App Store transaction so the server can confirm the purchase with Apple. The server keeps that purchase’s original transaction ID together with the guest pass ID for two days, so one purchase cannot unlock EIGA Plus for unlimited guests, and then deletes it.</p>
 
   <h2>Data stored on the EIGA server when you sign in</h2>
   <ul>
@@ -44,7 +45,7 @@
     <li>Taste events you make while signed in (likes, super likes, passes, watchlist, favourites, watched, ratings, “never show again”, tournament picks) and the taste profile derived from them.</li>
     <li>Your movie nights: the recommended film list, locale, and streaming services used, plus tournament progress and winners.</li>
     <li>A summary of how each recommendation list was scored (no personal details beyond the link to your account).</li>
-    <li>If you subscribe to EIGA Plus: the App Store original transaction ID, transaction ID, product, environment, subscription status, and expiry date. EIGA never receives payment-card details.</li>
+    <li>If you buy EIGA Plus: the App Store original transaction ID, transaction ID, product (weekly, monthly, yearly or lifetime), environment, status, and expiry date for subscriptions. EIGA never receives payment-card details.</li>
     <li>If you use Sign in with Apple: an encrypted Apple refresh token, kept only so EIGA can revoke Apple’s authorization when you delete your account.</li>
   </ul>
   <p>The app stores its EIGA session token in the iOS Keychain.</p>
@@ -52,6 +53,7 @@
   <h2>Service providers</h2>
   <ul>
     <li><strong>Apple</strong>: Sign in with Apple, App Store purchases, and subscription status checks.</li>
+    <li><strong>RevenueCat</strong>: processes EIGA Plus purchases and restores for EIGA. It receives the App Store purchase details, a random app user ID (or, when you are signed in, your EIGA account ID so the purchase follows your account), your app version, device model, operating system version, country and IP address. RevenueCat does not receive payment-card details. EIGA does not use RevenueCat for advertising or tracking. See <a href="https://www.revenuecat.com/privacy">RevenueCat’s privacy policy</a>.</li>
     <li><strong>Google</strong>: Google Sign-In, if you choose it. EIGA verifies the identity token Google issues.</li>
     <li><strong>TMDB (The Movie Database)</strong>: film metadata, artwork, trailers, and search. The EIGA server sends TMDB film IDs, search text, locale, and filters, never your account details. Posters and images load directly from TMDB’s image servers, which therefore see your IP address.</li>
     <li><strong>JustWatch</strong>: streaming availability, provided through TMDB. Availability links open TMDB or JustWatch pages.</li>
@@ -61,9 +63,10 @@
 
   <h2>Retention</h2>
   <p>Account data is kept until you delete your account. Anonymous movie-night lists are deleted after 30 days, and unused guest passes after 400 days. Server logs contain request IDs and error details, not taste data, and are rotated automatically.</p>
+  <p>Once an account has had its free movie night, the server keeps a one-way SHA-256 fingerprint of the sign-in provider’s account identifier and the date it was used. It is kept after account deletion, so the free night cannot be claimed again by deleting the account and signing in again. It cannot be turned back into your identifier and is not linked to any other data.</p>
 
   <h2>Delete your account and data</h2>
-  <p>Open <span class="path">Profile › Account &amp; Security › Delete account</span> in EIGA. Deletion happens immediately: your account, taste events, taste profile, movie nights, tournaments, recommendation summaries, and stored subscription records are removed from the EIGA server, and a Sign in with Apple authorization is revoked. Deleting your account does not cancel an App Store subscription; manage that in iOS Settings › Apple Account › Subscriptions.</p>
+  <p>Open <span class="path">Profile › Account &amp; Security › Delete account</span> in EIGA. Deletion happens immediately: your account, taste events, taste profile, movie nights, tournaments, recommendation summaries, and stored subscription records are removed from the EIGA server, and a Sign in with Apple authorization is revoked. Only the free-night fingerprint described under Retention remains. Deleting your account does not cancel an App Store subscription; manage that in iOS Settings › Apple Account › Subscriptions.</p>
 
   <h2>Children</h2>
   <p>EIGA is not directed at children under 13. Teen profiles only see age-appropriate certifications.</p>
