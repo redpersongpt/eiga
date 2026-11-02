@@ -63,7 +63,7 @@
 
   <h2>Retention</h2>
   <p>Account data is kept until you delete your account. Anonymous movie-night lists are deleted after 30 days, and unused guest passes after 400 days. Server logs contain request IDs and error details, not taste data, and are rotated automatically.</p>
-  <p>Once an account has had its free movie night, the server keeps a one-way SHA-256 fingerprint of the sign-in provider’s account identifier and the date it was used. It is kept after account deletion, so the free night cannot be claimed again by deleting the account and signing in again. It cannot be turned back into your identifier and is not linked to any other data.</p>
+  <p>Once an account has had its free movie night, the server keeps a one-way SHA-256 fingerprint of the sign-in provider’s account identifier and the date it was used. It is kept after account deletion, so the free night cannot be claimed again by deleting the account and signing in again. It cannot be turned back into your identifier, but it would match again if the same sign-in account is used, which is how a second free night is prevented. It is not linked to any other data.</p>
 
   <h2>Delete your account and data</h2>
   <p>Open <span class="path">Profile › Account &amp; Security › Delete account</span> in EIGA. Deletion happens immediately: your account, taste events, taste profile, movie nights, tournaments, recommendation summaries, and stored subscription records are removed from the EIGA server, and a Sign in with Apple authorization is revoked. Only the free-night fingerprint described under Retention remains. Deleting your account does not cancel an App Store subscription; manage that in iOS Settings › Apple Account › Subscriptions.</p>
